@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="menu-container">
+            <div class="app-logo-container"><img class="logo" src="logo-2.jpg"></div>
+            <div class="menu-content">
+                <div class="menubar-container">
+                    <div class="home menu selected"><span class="material-icons menu-icons">home</span>
+                        <div class="menu-icon-name">Home</div>
+                    </div>
+                    <div class="shuffle menu"><span class="material-icons menu-icons">shuffle</span>
+                        <div class="menu-icon-name">Shuffle</div>
+                    </div>
+                    <div class="library menu"><span class="material-icons menu-icons">collections</span>
+                        <div class="menu-icon-name">Your Library</div>
+                    </div>
+                </div>
+                <div class="create-playlist-container">
+                    <div class="playlist menu"><span class="material-icons menu-icons">add</span>
+                        <div class="menu-icon-name">Create Playlist</div>
+                    </div>
+                    <div class="liked menu"><span class="material-icons menu-icons">favorite</span>
+                        <div class="menu-icon-name">Liked Songs</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="player-container">
+            <div class="nav-bar">
+                <div class="arrows">
+                    <div class="left-arrow nav-bar-icon song-change-icons"><span class="material-icons">arrow_back_ios</span></div>
+                    <div class="right-arrow nav-bar-icon song-change-icons"><span class="material-icons">arrow_forward_ios</span></div>
+                </div>
+                <div class="search-bar-container">
+                    <div class="nav-bar-icon"><span class="material-icons">search</span></div>
+                    <div class="search-bar" contenteditable="true">Search....</div>
+                </div>
+            </div>
+            <!-- <div class="playlist-queues">
+                <div class="playlist-heading">Playlists</div>
+                <div class="playlists-section">
+                    <div class="playlist-container playlist-1">
+                        <div class="playlist-img"><img class="picture" src="https://cdn.dribbble.com/users/31348/screenshots/5383318/aid_vinyl_19_4x.jpg"></div>
+                        <div class="playlist-play-icon-container"><div class="material-icons playlist-play-icon">play_arrow</div></div>
+                        <div class="playlist-content" contenteditable="true"></div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="player">
+                <div class="cover-page">
+                    <div class="video-container"></div>
+        -            <div class="album-photo-container"></div>
+                </div>
+                <div class="songs-list"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
