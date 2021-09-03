@@ -255,7 +255,7 @@ body{
 .play-col,.favorite-col,.time-col{
     width: 10%;
 }
-.favorite-col .material-icons{
+.favorite-col.header .material-icons,.liked.song-like .material-icons{
     color: red;
 }
 .song-number-col{
@@ -281,8 +281,13 @@ body{
 }
 
 .songs{
+    display: flex;
     height:6vh;
     width:100%;
-    background-color: red;
     margin-bottom: 3px;
+    color:white;
+}
+
+.songs.playing{
+    background-color:#232323;
 }
