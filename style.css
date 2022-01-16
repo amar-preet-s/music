@@ -81,11 +81,7 @@ body{
 }
 
 .nav-bar{
-    height:10vh;
     background-color: rgb(40,40,40);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: white;
     position: relative;
 }
@@ -233,7 +229,7 @@ body{
 .video-container{
     height: 100%;
     background-color: aliceblue;
-    width: 75%;
+    width: 100%;
 }
 
 .song-head-bar{
@@ -252,7 +248,7 @@ body{
     background-color: #1a1a1a;
 }
 
-.play-col,.favorite-col,.time-col{
+.gen-col,.favorite-col,.time-col{
     width: 10%;
 }
 .favorite-col.header .material-icons,.liked.song-like .material-icons{
@@ -270,7 +266,7 @@ body{
     width: 20%;
 }
 
-.play-col,.favorite-col,.time-col,.song-number-col,
+.gen-col,.favorite-col,.time-col,.song-number-col,
 .last-date-added-col,.song-title-col{
     display: flex;
     align-items: center;
@@ -291,3 +287,75 @@ body{
 .songs.playing{
     background-color:#232323;
 }
+
+.song-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+  }
+
+
+  .rewind {
+    margin-left: 70px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .play-pause {
+    font-size: 40px;
+    color: #efefef;
+    cursor: pointer;
+  }
+  
+  .forward,
+  .volume {
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .timer {
+    height: 0.8vh;
+    background-color: white;
+    width: 0%;
+    cursor: pointer;
+    transition: width 0.1s linear;
+    position: relative;
+  }
+
+  
+  .volume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  
+  .volumeSliderContainer {
+    width: 180px;
+    height: 30px;
+    background-color: rgb(247, 247, 247);
+    border-radius: 5px;
+    position: absolute;
+    left: 2rem;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    /* transform: rotate(-90deg) translateX(40%); */
+  }
+  
+  .volume:hover .volumeSliderContainer{
+      display: flex;
+  }
+
+  .progress-bar-container {
+    width: 43vw;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    background-color: red;
+  }
